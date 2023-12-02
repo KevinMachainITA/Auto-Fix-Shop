@@ -11,502 +11,67 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DE9X0XZN9V"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DE9X0XZN9V');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-DE9X0XZN9V');
 </script>
+
 <body>
-     <!-- Navigation-->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Auto Fix</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+          <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+                class="img-fluid" alt="Phone image">
+            </div>
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+              <form>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form1Example13" class="form-control form-control-lg" />
+                  <label class="form-label" for="form1Example13">Email address</label>
+                </div>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Tienda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Perfil
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">ver perfil</a>
-                <a class="dropdown-item" href="#">configuración</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">cerrar sesión</a>
-              </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Busca aquí" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-          </form>
-        </div>
-    </nav>  
-    <!-- Header-->
-    <div class="container mt-3">
-        <div id="carouselExample" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/banner1.png" class="d-block w-100" alt="Imagen 1">
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" id="form1Example23" class="form-control form-control-lg" />
+                  <label class="form-label" for="form1Example23">Password</label>
                 </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
-        </div>
-    </div>
-    <!-- Section-->
-    <section class="py-5">
-        <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                        <!-- Product image-->
-                        <img class="card-img-top" src="img/img5.png" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">AGP.1978 2 faros delanteros LED Par46 H5001 de 5.7 pulgadas</h5>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$1,700.00</span>
-                                $1,564.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto.html">Ver producto</a></div>
-                        </div>
-                    </div>
+      
+                <div class="d-flex justify-content-around align-items-center mb-4">
+                  <!-- Checkbox -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                    <label class="form-check-label" for="form1Example3"> Remember me </label>
+                  </div>
+                  <a href="#!">Forgot password?</a>
                 </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                        <!-- Product image-->
-                        <img class="card-img-top" src="img/img2.png" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Amortiguadores AG Compatible Para Chevrolet Tornado 2004-2010</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$7,500.00</span>
-                                $6,500.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                        </div>
-                    </div>
+      
+                <!-- Submit button -->
+                <a href="index.html"  class="btn btn-primary btn-lg btn-block">Sign in</a>
+      
+                <div class="divider d-flex align-items-center my-4">
+                  <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
                 </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                        <!-- Product image-->
-                        <img class="card-img-top" src="img/aceite.png" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Aceite Motor Sintetico 5w20 Gf-5 Max Pro Tec 5 Litros Lth</h5>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$1,050.00</span>
-                                $989.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="img/img4.png" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Moto Bateria LTH AGM CTX14-BS Premium</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                $2,530.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="img/freno.png" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Power Stop KOE2316 - Kit de freno delantero y pastillas de freno de cerámica</h5>
-                                <!-- Product price-->
-                                $2,529.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="img/img6.png" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Bosch 9697 - Bujía</h5>
-                                <!-- Product price-->
-                                $916.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                        <!-- Product image-->
-                        <img class="card-img-top" src="img/img7.png" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Auto Parasoles de Coche para Ventanas Frontales - Reflector UV Bloque (1 Pcs)</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$110.00</span>
-                                $91.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                        <!-- Product image-->
-                        <img class="card-img-top" src="img/img9.png" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Llanta Continental PremiumContact 2 195/65R15</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$2999.00</span>
-                                $2249.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                        <!-- Product image-->
-                        <img class="card-img-top" src="img/img10.png" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Hoja Limpiaparabrisas Duralast</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$189.00</span>
-                                $150.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="img/img8.png" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">DEPO - Espejo retrovisor eléctrico con luz de señal de giro</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                $1,308.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer-->
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-        </div>
-        <!-- Left -->
-    
-        <!-- Right -->
-        <div>
-            <a href="https://www.facebook.com/profile.php?id=61553150535098" class="me-4 text-reset">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook-filled" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" stroke-width="0" fill="currentColor" />
-                  </svg>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                    <path d="M16.5 7.5l0 .01" />
-                  </svg>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter-filled" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z" stroke-width="0" fill="currentColor" />
-                  </svg>
-            </a>
-        </div>
-        <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
-    
-        <!-- Section: Links  -->
-        <section class="">
-        <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Auto Fix Shop
-                </h6>
-                <p>
-                Tienda de productos para carros.
-                </p>
-            </div>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                Productos
-                </h6>
-                <p>
-                <a href="#!" class="text-reset">Faros</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Aceites</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Baterías</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Accesorios</a>
-                </p>
-            </div>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                Links de ayuda
-                </h6>
-                <p>
-                <a href="#!" class="text-reset">Ajustes</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Configuración</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Ordenes</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Ayuda</a>
-                </p>
-            </div>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-                <p><i class="fas fa-home me-3"></i>Av. Tecnológico #234 Aguascalientes</p>
-                <p>
-                <i class="fas fa-envelope me-3"></i>
-                contacto@autofixshop.com
-                </p>
-                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                <p><i class="fas fa-print me-3"></i> + 01 234 452 72</p>
-            </div>
-            <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
-        </div>
-        </section>
-        <!-- Section: Links  -->
-    
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2023 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">AutoFixShop.com</a>
-        </div>
-        <!-- Copyright -->
-
-        
-    </footer>
-    <!-- Footer -->
-      <!-- Modal -->
-      <div class="modal fade" id="modalTerminos" tabindex="-1" role="dialog" aria-labelledby="modalTerminosLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalTerminosLabel">Aceptación de Términos a "Auto Fix Shop"</h5>
-              <p></p>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <!-- Contenido de tus términos y condiciones -->
-                <p>Una tienda en línea que ofrece una amplia variedad de refacciones para automóviles, motocicletas y camionetas. Al acceder y utilizar nuestro sitio web, aceptas cumplir con los siguientes términos y condiciones, así como con todas las leyes y regulaciones aplicables.</p>
-                <p>Te comprometes a utilizar nuestro sitio web de manera ética y legal. No debes realizar actividades que puedan dañar, sobrecargar o afectar negativamente la integridad de nuestro sitio.</p>
-                <p>Nos comprometemos a proteger tu privacidad. Consulta nuestra política de privacidad para obtener información detallada sobre cómo recopilamos, utilizamos y protegemos tus datos personales.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" id="cerrarModal">Aceptar</button>
-                <a class="text-reset fw-bold" href="terminos.html">Ver más</a>
+      
+                <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!"
+                  role="button">
+                  <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
+                </a>
+                <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!"
+                  role="button">
+                  <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
+      
+              </form>
             </div>
           </div>
         </div>
-      </div>
-      
-      <!-- Scripts de Bootstrap y jQuery (asegúrate de incluir jQuery antes de Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-        // Muestra el modal al cargar la página
-            $('#modalTerminos').modal('show');
-
-            // Cierra el modal al hacer clic en el botón "Cerrar"
-            $('#cerrarModal').on('click', function() {
-            $('#modalTerminos').modal('hide');
-            });
-        });
-    </script>
-
-    <!-- Bootstrap core JS-->
-    
+      </section>
 </body>
 </html>

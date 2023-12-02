@@ -34,3 +34,16 @@ function mostrarProductos() {
         productosContainer.appendChild(productoElement);
     });
 }
+
+// Función para mostrar los detalles del producto y redirigir a producto.html
+function mostrarDetalle(nombreProducto) {
+    const productoSeleccionado = productos.find(producto => producto.nombre === nombreProducto);
+
+    if (productoSeleccionado) {
+      // Almacena los detalles del producto en el Local Storage
+      localStorage.setItem('productoSeleccionado', JSON.stringify(productoSeleccionado));
+  
+      // Redirige a producto.html
+      window.location.href = 'producto.html';
+    }
+}

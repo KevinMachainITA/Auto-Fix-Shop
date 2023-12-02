@@ -60,3 +60,9 @@ function ordenarProductos() {
     // Vuelve a mostrar los productos en la página después de ordenar
     mostrarProductos();
 }
+
+window.onload = function() {
+    // Orden predeterminado, por ejemplo, ascendente
+    productos.sort((a, b) => a.nombre.localeCompare(b.nombre));
+    mostrarProductos();
+};

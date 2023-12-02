@@ -47,3 +47,16 @@ function mostrarDetalle(nombreProducto) {
       window.location.href = 'producto.html';
     }
 }
+
+function ordenarProductos() {
+    const ordenSeleccionado = document.getElementById('ordenarProductos').value;
+
+    if (ordenSeleccionado === 'ascendente') {
+        productos.sort((a, b) => a.nombre.localeCompare(b.nombre));
+    } else if (ordenSeleccionado === 'descendente') {
+        productos.sort((a, b) => b.nombre.localeCompare(a.nombre));
+    }
+
+    // Vuelve a mostrar los productos en la página después de ordenar
+    mostrarProductos();
+}

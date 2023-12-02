@@ -66,7 +66,44 @@
       </div>
     </nav> 
      
-    
+    <div class="card mx-auto my-2" style="width: 24rem;">
+        <img class="card-img-top mx-auto" style="width: 10rem; height: 14rem;" src="img/profile1.svg" alt="Card image cap">
+        <div class="card-body">
+          <div class="card-title text-center">
+            <h5 id="nombreUsuario"></h5>
+            <span>
+              <a href="editarPerfil.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                  <path d="M13.5 6.5l4 4" />
+                </svg>
+              </a>
+            </span>
+        </div>
+          <p class="card-text text-center" id="correoUsuario"></p>
+        </div>
+        <div class="alert alert-success" role="alert">
+            Compras realizadas <a href="#" class="alert-link">3</a>. Puedes ver el estado de tus pedidos abajo en este perfil.
+        </div>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Órdenes de Compra</h2>
+      <table class="table">
+          <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>Dirección</th>
+                  <th>Total</th>
+                  <th>Productos</th>
+              </tr>
+          </thead>
+          <tbody id="ordenesCompraBody">
+              <!-- Los datos se llenarán dinámicamente desde JavaScript -->
+          </tbody>
+      </table>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

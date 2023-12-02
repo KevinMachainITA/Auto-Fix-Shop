@@ -83,6 +83,22 @@
             </a>
         </div>
     </div>
+    
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+          <div class="mb-3">
+            <label for="ordenarProductos" class="form-label">Ordenar por:</label>
+            <select class="form-select" id="ordenarProductos" onchange="ordenarProductos()">
+                <option value="ascendente">A-Z</option>
+                <option value="descendente">Z-A</option>
+            </select>
+          </div>
+          <div  id="productosContainer" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+              
+          </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">

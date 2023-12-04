@@ -7,6 +7,7 @@ function loginUser() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     var nombre = 'Luis Alfonso García Machain'
+    var direccion = 'P. Sherman Calle Wallaby 42, Sidney'
     // Valida los campos (puedes agregar más validaciones según tus requisitos)
     if (email === '' || password === '') {
         alert('Por favor, completa todos los campos.');
@@ -14,7 +15,7 @@ function loginUser() {
     }
 
     // Se establecen las credenciales del usuario (clase de usuario)
-    var user = new User(email, password, nombre);
+    var user = new User(email, password, nombre, direccion);
 
     localStorage.setItem('currentUser', JSON.stringify(user));
 
@@ -23,9 +24,10 @@ function loginUser() {
 }
 
 class User {
-    constructor(email, password, nombre) {
+    constructor(email, password, nombre, direccion) {
       this.email = email;
       this.password = password;
       this.nombre = nombre;
+      this.direccion = direccion;
     }
 }

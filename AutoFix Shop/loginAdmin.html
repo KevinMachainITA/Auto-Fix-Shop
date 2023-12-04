@@ -27,7 +27,7 @@
                                 <input type="password" id="password" class="form-control" required>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-block" onclick="iniciarSesion()">Iniciar Sesión</button>
+                            <a href="crudproductos.html" class="btn btn-primary btn-block">Iniciar Sesión</a>
                         </form>
                     </div>
                 </div>
@@ -39,15 +39,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <script>
-        function iniciarSesion() {
-            // Aquí podrías realizar la autenticación real con tu backend
-            // En este ejemplo, simplemente redirigimos a otra página después de un breve retraso
-            setTimeout(function () {
-                window.location.href = 'crudProductos.html'; // Cambia la URL según tus necesidades
-            }, 1000); // Retraso de 1 segundo (simulando una operación de inicio de sesión)
-        }
-    </script>
 
 </body>
 

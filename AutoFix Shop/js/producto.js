@@ -106,5 +106,52 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const comentariosContainer = document.getElementById("comentariosContainer");
+    const formularioComentario = document.getElementById("formularioComentario");
+
+    // Función para agregar un nuevo comentario
+    function agregarComentario(event) {
+        event.preventDefault();
+
+        // Obtener los valores del formulario
+        const nombre = document.getElementById("nombre").value;
+        const descripcion = document.getElementById("descripcion").value;
+        const estrellas = document.getElementById("estrellas").value;
+
+        // Crear un nuevo objeto de comentario
+        const nuevoComentario = {
+            nombre: nombre,
+            descripcion: descripcion,
+            estrellas: estrellas
+        };
+
+        // Agregar el nuevo comentario al arreglo de productos
+        productos.push(nuevoComentario);
+
+        // Limpiar el contenedor de comentarios
+        comentariosContainer.innerHTML = "";
+
+        // Mostrar todos los comentarios, incluido el nuevo
+        productos.forEach(function(producto) {
+            const comentarioDiv = document.createElement("div");
+            comentarioDiv.classList.add("comentario");
+
+            comentarioDiv.innerHTML = `
+                <h5>${producto.nombre}</h5>
+                <p>${producto.descripcion}</p>
+                <p>Estrellas: ${producto.estrellas}</p>
+            `;
+
+            comentariosContainer.appendChild(comentarioDiv);
+        });
+
+        // Limpiar el formulario
+        formularioComentario.reset();
+    }
+
+    // Agregar el evento submit al formulario
+    formularioComentario.addEventListener("submit", agregarComentario);
+});
 
 window.onload = mostrarProducto;

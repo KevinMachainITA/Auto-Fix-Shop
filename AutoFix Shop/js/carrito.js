@@ -53,3 +53,46 @@ function mostrarCarrito() {
     totalContainer.textContent = `Total del carrito: $${totalCarrito.toFixed(2)}`;
 }
 
+function eliminarDelCarrito(productoId) {
+    // Recupera el carrito actual del Local Storage
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    // Filtra el carrito para excluir el producto con el ID dado
+    const nuevoCarrito = carrito.filter(producto => producto.id !== productoId);
+
+    // Almacena el carrito actualizado en el Local Storage
+    localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
+
+    // Vuelve a cargar la página del carrito para reflejar los cambios
+    location.reload();
+}
+
+//sb-pasmb28422759@personal.example.com
+
+//Tr0!.08^ contraseña 
+
+//https://developer.paypal.com/dashboard/accounts/edit/4818706677009068712?accountName=sb-y041z22318661@personal.example.com
+
+paypal.Buttons({
+    createOrder: function (data, actions) {
+        // Set up the transaction
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: totalCarrito
+                }
+            }]
+        });
+    },
+
+    onApprove: function (data, actions) {
+        actions.order.capture().then(function (detalles) {
+            alert("PAGO APROBADO\nPara rembolosos favor de comunicarse en el apartado de contacto con el ID de compra: " + detalles.id);
+        });
+
+    },
+
+    onCancel: function (data) {
+        alert("PAGO CANCELADO");
+    }
+}).render('#paypal-button-container');

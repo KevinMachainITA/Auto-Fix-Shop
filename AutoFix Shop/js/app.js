@@ -50,11 +50,26 @@ function mostrarDetalle(nombreProducto) {
 
 function ordenarProductos() {
     const ordenSeleccionado = document.getElementById('ordenarProductos').value;
+    
+    // Función para comparar el precio de dos productos de mayor a menor
+    function compararPorPrecioMayor(a, b) {
+        return b.precio > a.precio ? 1 : -1;
+    }
 
+    // Función para comparar el precio de dos productos de menor a mayor
+    function compararPorPrecioMenor(a, b) {
+        return a.precio - b.precio;
+    }
+    
+    // Aplicar el filtro según la opción seleccionada
     if (ordenSeleccionado === 'ascendente') {
         productos.sort((a, b) => a.nombre.localeCompare(b.nombre));
     } else if (ordenSeleccionado === 'descendente') {
         productos.sort((a, b) => b.nombre.localeCompare(a.nombre));
+    } else if (ordenSeleccionado === 'mayor') {
+        productos.sort(compararPorPrecioMayor);
+    } else if (ordenSeleccionado === 'menor') {
+        productos.sort(compararPorPrecioMenor);
     }
 
     // Vuelve a mostrar los productos en la página después de ordenar

@@ -2,7 +2,7 @@ let productos = [
     {
         id: 1234234212,
         nombre: "AGP.1978 2 faros delanteros LED Par46 H5001 de 5.7 pulgadas",
-        descripcion: "Descripción del producto 1.",
+        descripcion: "Este set de faros delanteros LED Par46 H5001 de 5.7 pulgadas de AGP.1978 ofrece una solución de iluminación avanzada para vehículos. Con un diseño moderno y eficiente, mejora la visibilidad en carretera, proporcionando una iluminación potente y nítida.",
         categoria: "Faros",
         precio: 1564.00,
         stock: 100,
@@ -11,7 +11,7 @@ let productos = [
     {
         id: 267678678856,
         nombre: "Amortiguadores AG Compatible Para Chevrolet Tornado 2004-2010",
-        descripcion: "Descripción del producto 2.",
+        descripcion: "Estos amortiguadores están especialmente diseñados para el Chevrolet Tornado fabricado entre 2004 y 2010. Ofrecen un rendimiento de suspensión óptimo, mejorando la estabilidad y el confort de conducción en diversos terrenos.",
         categoria: "Amortiguadores",
         precio: 6500.00,
         stock: 220,
@@ -20,7 +20,7 @@ let productos = [
     {
         id: 37896342452,
         nombre: "Aceite Motor Sintetico 5w20 Gf-5 Max Pro Tec 5 Litros Lth",
-        descripcion: "Descripción del producto 3.",
+        descripcion: "El aceite sintético 5w20 GF-5 Max Pro Tec de LTH envasado en presentación de 5 litros es ideal para el mantenimiento del motor. Ofrece una protección superior contra el desgaste y asegura un rendimiento óptimo del motor.",
         categoria: "Aceites",
         precio: 989.00,
         stock: 450,
@@ -29,7 +29,7 @@ let productos = [
     {
         id: 401241219248,
         nombre: "Moto Bateria LTH AGM CTX14-BS Premium",
-        descripcion: "Descripción del producto 4.",
+        descripcion: "Esta batería LTH AGM CTX14-BS Premium está específicamente diseñada para motocicletas, proporcionando una potencia confiable y una durabilidad excepcional incluso en condiciones exigentes.",
         categoria: "Baterías",
         precio: 2530.00,
         stock: 82,
@@ -38,7 +38,7 @@ let productos = [
     {
         id: 5234132423498,
         nombre: "Power Stop KOE2316 - Kit de freno delantero y pastillas de freno de cerámica",
-        descripcion: "Descripción del producto 5.",
+        descripcion: "El kit de freno delantero Power Stop KOE2316 incluye pastillas de freno de cerámica de alta calidad. Proporciona un rendimiento de frenado eficiente y silencioso, junto con una mayor durabilidad y resistencia al calentamiento.",
         categoria: "Frenos",
         precio: 6500.00,
         stock: 25,

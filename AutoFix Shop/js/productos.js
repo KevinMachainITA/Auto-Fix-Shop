@@ -47,7 +47,7 @@ let productos = [
     {
         id: 6023482342381,
         nombre: "Bosch 9697 - Bujía",
-        descripcion: "Descripción del producto 6.",
+        descripcion: "La bujía Bosch modelo 9697 es crucial para generar chispas en el sistema de encendido de motores de combustión interna. Ofrece un rendimiento confiable y una combustión eficiente.",
         categoria: "Bujías",
         precio: 916.00,
         stock: 810,
@@ -56,7 +56,7 @@ let productos = [
     {
         id: 71121235845,
         nombre: "Auto Parasoles de Coche para Ventanas Frontales - Reflector UV Bloque (1 Pcs)",
-        descripcion: "Descripción del producto 7.",
+        descripcion: "Este juego de parasoles está diseñado para las ventanas frontales del automóvil, ofreciendo una protección efectiva contra los rayos UV, manteniendo el interior del automóvil fresco y protegido.",
         categoria: "Parasoles",
         precio: 110.00,
         stock: 30,
@@ -65,7 +65,7 @@ let productos = [
     {
         id: 9232734827347,
         nombre: "DEPO - Espejo retrovisor eléctrico con luz de señal de giro",
-        descripcion: "Descripción del producto 8.",
+        descripcion: "El espejo retrovisor eléctrico DEPO viene equipado con una luz de señal de giro integrada, mejorando la visibilidad lateral y la seguridad al cambiar de carril o dirección.",
         categoria: "Retrovisores",
         precio: 1308.00,
         stock: 78,
@@ -74,7 +74,7 @@ let productos = [
     {
         id: 9234823423,
         nombre: "Llanta Continental PremiumContact 2 195/65R15",
-        descripcion: "Descripción del producto 9.",
+        descripcion: "Esta llanta Continental modelo PremiumContact 2, con medidas 195/65R15, ofrece un rendimiento excepcional en agarre y estabilidad, proporcionando una experiencia de conducción segura y cómoda.",
         categoria: "Llantas",
         precio: 2249.00,
         stock: 24,
@@ -83,7 +83,7 @@ let productos = [
     {
         id: 10324234234,
         nombre: "Hoja Limpiaparabrisas Duralast",
-        descripcion: "Descripción del producto 10.",
+        descripcion: "La hoja limpiaparabrisas Duralast asegura una limpieza eficaz y sin rayas en el parabrisas, proporcionando una visión clara en condiciones climáticas adversas para una conducción segura.",
         categoria: "parabrisas",
         precio: 189.00,
         stock: 600,

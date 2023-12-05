@@ -2,35 +2,52 @@ document.addEventListener('DOMContentLoaded', mostrarLista);
 
 function mostrarLista() {
     const listaContainer = document.getElementById('listaContainer');
-
+    listaContainer.innerHTML = '';
     // Recupera la lista de deseos actual del Local Storage
     const lista = JSON.parse(localStorage.getItem('lista')) || [];
+
+    // Verifica si ya hay dos objetos en el carrito y, en caso contrario, los agrega
+    if (lista.length < 1) {
+        const objeto1 = {
+            id: 1234234212,
+            nombre: "AGP.1978 2 faros delanteros LED Par46 H5001 de 5.7 pulgadas",
+            descripcion: "Este set de faros delanteros LED Par46 H5001 de 5.7 pulgadas de AGP.1978 ofrece una solución de iluminación avanzada para vehículos. Con un diseño moderno y eficiente, mejora la visibilidad en carretera, proporcionando una iluminación potente y nítida.",
+            categoria: "Faros",
+            precio: 1564.00,
+            stock: 100,
+            imagen: "img/img5.png"
+        };
+
+        lista.push(objeto1);
+
+        // Almacena el carrito actualizado en el Local Storage
+        localStorage.setItem('lista', JSON.stringify(lista));
+    }
 
     // Muestra los productos en el carrito
     lista.forEach(producto => {
         const productoElement = document.createElement('div');
 
-        productoElement.innerHTML = `
+        productoElement.classList.add('col', 'mb-5');
 
-    <div class="col mb-5">
-        <div class="card h-100">
-            <!-- Product image-->
-            <img class="card-img-top" src="${producto.imagen}" alt="${producto.name}" />
-            <!-- Product details-->
-            <div class="card-body p-4">
-                <div class="text-center">
-                    <!-- Product name-->
-                    <h5 class="fw-bolder">${producto.nombre}</h5>
-                    <!-- Product price-->
-                    <span>$${producto.precio.toFixed(2)}</span>
+        productoElement.innerHTML = `
+            <div class="card h-100">
+                <!-- Product image-->
+                <img class="card-img-top" src="${producto.imagen}" alt="${producto.name}" />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">${producto.nombre}</h5>
+                        <!-- Product price-->
+                        <span>$${producto.precio.toFixed(2)}</span>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <button class="eliminarBtn" data-id="${producto.id}">Eliminar de la lista</button>
                 </div>
             </div>
-            <div class="card-body">
-                <button class="eliminarBtn" data-id="${producto.id}">Eliminar de la lista</button>
-            </div>
-        </div>
-    </div>
-    `;
+        `;
 
         // Agrega el elemento del producto al contenedor de la lista
         listaContainer.appendChild(productoElement);
@@ -39,9 +56,6 @@ function mostrarLista() {
         const eliminarBtn = productoElement.querySelector('.eliminarBtn');
         eliminarBtn.addEventListener('click', () => eliminarDelaLista(producto.id));
     });
-
-    // Muestra el total del carrito
-    totalContainer.textContent = `Total del carrito: $${totalCarrito.toFixed(2)}`;
 }
 
 function eliminarDelaLista(productoId) {
@@ -55,5 +69,5 @@ function eliminarDelaLista(productoId) {
     localStorage.setItem('lista', JSON.stringify(nuevaLista));
 
     // Vuelve a cargar la página del carrito para reflejar los cambios
-    location.reload();
+    mostrarLista()
 }

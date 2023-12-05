@@ -12,11 +12,15 @@ function mostrarProducto() {
             <!-- Product details-->
                 <div class="text-center">
                     <!-- Nombre del producto-->
-                    <h5 class="fw-bolder">${producto.nombre}</h5>
+                    <h4>${producto.nombre}</h5>
                     <!-- Descripcion del producto -->
-                    <h5 >${producto.descripcion}</h5>
+                    <hr/>
+                    <h7 >${producto.descripcion}</h7>
+                    <hr/>
+                    <h7 >${producto.descripcion_corta}</h7>
                     <!-- Precio del producto-->
-                    <span>$${producto.precio}</span>
+                    <hr/>
+                    <h2 class="mt-2">$${producto.precio}</h2>
                 </div>
             </div>
             <!-- Product actions-->

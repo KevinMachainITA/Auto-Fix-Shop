@@ -48,6 +48,25 @@ function mostrarDetalle(nombreProducto) {
     }
 }
 
+function buscarProductos() {
+    const searchInput = document.getElementById('searchInput');
+
+    if(searchInput !== ''){
+        // Obtiene el valor del campo de búsqueda
+        const searchTerm = searchInput.value.toLowerCase();
+
+        auxProductos = productos;
+
+        productos = productos.filter(producto =>
+            producto.nombre.toLowerCase().includes(searchTerm)
+        );
+        
+        mostrarProductos()
+
+        productos = auxProductos;
+    }
+}
+
 function ordenarProductos() {
     const ordenSeleccionado = document.getElementById('ordenarProductos').value;
     

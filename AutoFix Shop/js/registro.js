@@ -15,20 +15,6 @@ function registroUser() {
         return;
     }
 
-    // Se establecen las credenciales del usuario (clase de usuario)
-    var user = new User(email, password, nombre, direccion);
-
-    localStorage.setItem('currentUser', JSON.stringify(user));
-
     // Redirige a otra página o realiza otras acciones después de iniciar sesión
     window.location.href = 'home.html';
-}
-
-class User {
-    constructor(email, password, nombre, direccion) {
-      this.email = email;
-      this.password = password;
-      this.nombre = nombre;
-      this.direccion = direccion;
-    }
 }

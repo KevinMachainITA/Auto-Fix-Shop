@@ -6,18 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var correoUsuarioElement = document.getElementById("correo");
     var passwordUsuarioElement = document.getElementById("password");
 
-    // Obtiene el objeto 'currentUser' del localStorage y lo convierte a JSON
-    var currentUserJSON = localStorage.getItem("currentUser");
-    
-    // Parsea el JSON para obtener el objeto JavaScript
-    var currentUser = JSON.parse(currentUserJSON);
-
-    console.log(currentUser)
     // Muestra el nombre de usuario, correo y contraseña en el elemento HTML
-    nombreUsuarioElement.value = currentUser.nombre;
-    correoUsuarioElement.value = currentUser.email;
-    passwordUsuarioElement.value = currentUser.password;
-    direccionUsuarioElement.value = currentUser.direccion;
+    nombreUsuarioElement.value = usuario.nombre;
+    correoUsuarioElement.value = usuario.email;
+    passwordUsuarioElement.value = usuario.password;
+    direccionUsuarioElement.value = usuario.direccion;
 });
 
 document.getElementById('botonGuardar').addEventListener('click', function () {
@@ -35,21 +28,7 @@ function guardarUser() {
         alert('Por favor, completa todos los campos.');
         return;
     }
-    // Se establecen las credenciales del usuario (clase de usuario)
-    var user = new User(email, password, nombre, direccion);
-
-    localStorage.setItem('currentUser', JSON.stringify(user));
 
     // Redirige a otra página o realiza otras acciones después de iniciar sesión
     window.location.href = 'perfil.html';
-}
-
-
-class User {
-    constructor(email, password, nombre, direccion) {
-      this.email = email;
-      this.password = password;
-      this.nombre = nombre;
-      this.direccion = direccion;
-    }
 }

@@ -12,7 +12,7 @@ function mostrarProducto() {
             <!-- Product details-->
                 <div class="text-center">
                     <!-- Nombre del producto-->
-                    <h4>${producto.nombre}</h5>
+                    <h4>${producto.nombre}</h4>
                     <!-- Descripcion del producto -->
                     <hr/>
                     <h7 >${producto.descripcion}</h7>
